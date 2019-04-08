@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp">
+
+    <RelativeLayout
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_mg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_10" />
+
+
+        <TextView
+            android:id="@+id/tv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_toRightOf="@+id/sdv_mg"
+            android:text="111"
+            android:textColor="#202020"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_50"
+            android:layout_toRightOf="@+id/sdv_mg"
+            android:text="111"
+            android:textColor="@color/black6"
+            android:textSize="12sp" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_2"
+            android:background="@color/line" />
+
+    </RelativeLayout>
+</LinearLayout>

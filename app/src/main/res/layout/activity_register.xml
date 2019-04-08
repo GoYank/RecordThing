@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dimen_20">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/img_exit"
+            android:layout_width="22dp"
+            android:layout_height="21dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:src="@mipmap/exit" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="账号注册"
+        android:textColor="#202020"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_25"
+        android:layout_marginRight="@dimen/dimen_25"
+        android:layout_marginTop="@dimen/dimen_32"
+        android:background="@drawable/bg_log"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:maxLength="11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@color/white"
+            android:hint="请输入用户名"
+            android:textColor="#202020"
+            android:textColorHint="@color/black6"
+            android:textSize="@dimen/dimen_15" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_25"
+        android:layout_marginRight="@dimen/dimen_25"
+        android:layout_marginTop="@dimen/dimen_32"
+        android:background="@drawable/bg_log"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_marginRight="@dimen/dimen_5"
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:background="@color/white"
+            android:hint="请输入密码"
+            android:password="true"
+            android:textColor="#202020"
+            android:textColorHint="@color/black6"
+            android:textSize="@dimen/dimen_15" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_25"
+        android:layout_marginRight="@dimen/dimen_25"
+        android:layout_marginTop="@dimen/dimen_32"
+        android:background="@drawable/bg_log"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_marginRight="@dimen/dimen_5"
+            android:id="@+id/et_password_true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:hint="请确认密码"
+            android:background="@color/white"
+            android:password="true"
+            android:textColor="#202020"
+            android:textColorHint="@color/black6"
+            android:textSize="@dimen/dimen_15" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_regis"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_25"
+        android:layout_marginRight="@dimen/dimen_25"
+        android:layout_marginTop="@dimen/dimen_32"
+        android:background="@drawable/bg_log_button"
+        android:gravity="center"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_28"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="@dimen/dimen_25"
+            android:layout_height="@dimen/dimen_25"
+            android:buttonTint="@color/black6"/>
+        <TextView
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我同意并阅读"
+            android:textColor="@color/black6"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_userProtocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="“用户协议”"
+            android:textColor="#ff9501"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="和"
+            android:textColor="@color/black6"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="“隐私政策”"
+            android:textColor="#ff9501"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_28"
+        android:gravity="center"
+        android:text="立即登陆"
+        android:textColor="#ff9501"
+        android:textSize="@dimen/dimen_15" />
+
+</LinearLayout>

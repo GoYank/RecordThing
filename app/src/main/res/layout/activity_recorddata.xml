@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout"/>
+
+
+    <TextView
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="事件地域"
+        android:textColor="@color/black6"
+        android:textSize="@dimen/dimen_14"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@color/line" />
+    <LinearLayout
+        android:id="@+id/ll_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地域"
+            android:textSize="@dimen/dimen_15"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_20"/>
+
+        <TextView
+            android:id="@+id/tv_province"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择地域"
+            android:textSize="@dimen/dimen_15"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_50"/>
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/dimen_15"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_10"/>
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/dimen_15"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_10"/>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:background="@color/line" />
+
+    <TextView
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="起止时间"
+        android:textColor="@color/black6"
+        android:textSize="@dimen/dimen_14"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@color/line" />
+    <LinearLayout
+        android:id="@+id/ll_starttime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间"
+            android:textSize="@dimen/dimen_15"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_20"/>
+
+        <TextView
+            android:id="@+id/tv_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择时间"
+            android:textSize="@dimen/dimen_15"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_50"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@color/line" />
+    <LinearLayout
+        android:id="@+id/ll_endtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间"
+            android:textSize="@dimen/dimen_15"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_20"/>
+
+        <TextView
+            android:id="@+id/tv_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择时间"
+            android:textSize="@dimen/dimen_15"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_50"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@color/line" />
+    <TextView
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="搜索关键词"
+        android:textColor="@color/black6"
+        android:textSize="@dimen/dimen_14"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="关键词"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_15"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_keyword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:hint="搜索关键词"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:textColorHint="@color/black6"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <View
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:background="@drawable/start"
+        android:gravity="center"
+        android:text="开始检索"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_15" />
+
+
+</LinearLayout>
