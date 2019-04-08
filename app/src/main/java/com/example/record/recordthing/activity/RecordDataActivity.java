@@ -156,7 +156,7 @@ public class RecordDataActivity extends BaseActivity {
         }
     }
 
-    private void showPickerView() {// 弹出选择器
+    private void showPickerView() {//弹出选择器
 
         OptionsPickerView pvOptions = new OptionsPickerBuilder(this, new OnOptionsSelectListener() {
             @Override
